@@ -45,11 +45,11 @@ def get_parameters():
     parser.add_argument('--droprate', type=float, default=0.5)
     parser.add_argument('--lr', type=float, default=0.001, help='learning rate')
     parser.add_argument('--batch_size', type=int, default=32)
-    parser.add_argument('--epochs', type=int, default=1, help='epochs, default as 10000')
+    parser.add_argument('--epochs', type=int, default=10000, help='epochs, default as 10000')
     parser.add_argument('--opt', type=str, default='adam', help='optimizer, default as adam')
     parser.add_argument('--step_size', type=int, default=10)
     parser.add_argument('--gamma', type=float, default=0.95)
-    parser.add_argument('--patience', type=int, default=10, help='early stopping patience')
+    parser.add_argument('--patience', type=int, default=30, help='early stopping patience')
     args = parser.parse_args()
     print('Training configs: {}'.format(args))
 
